@@ -1,0 +1,9 @@
+ npm i -D nodemon 
+ -D - for only devleopment state  
+
+  "type": "module"
+  used in pack.json for this (import express from "express")
+
+
+     process.exit(1);
+     1 - means true
