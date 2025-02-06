@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema(
     },
     fullName: {
       type: String,
-      required: true, 
+      required: true,
     },
     email: {
       type: String,
@@ -51,6 +51,13 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    likedPosts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Post",
+        default: [],
+      },
+    ],
   },
   { Timestamps: true }
 );
